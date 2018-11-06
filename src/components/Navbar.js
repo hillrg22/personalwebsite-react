@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Navbar = () => {
+const Navbar = ({changeView}) => {
   return(
     <nav className="navbar navbar-expand-xl navbar-inverse">
       <div className="container-fluid">
@@ -19,7 +19,7 @@ const Navbar = () => {
             <li class="active"><a href="./index.html"> Home <span class="sr-only">(current)</span></a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#" onClick={changeView} >About</a></li>
           </ul>
         </div>
       </div>
